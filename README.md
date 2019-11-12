@@ -7,6 +7,9 @@ You can tag this bot from any chat to rot13 some text:
 
     @rot13itbot text to hide
 
+(**Note:** don't forget the `it` in `rot13itbot`; the more obvious username was
+taken by a less straightforward rot13 bot.)
+
 The rot13'd message will show up as having been sent from "Your username via
 @Rot13ItBot", and it will have a "show" button to conveniently show the
 original text.
@@ -20,9 +23,11 @@ original text.
 ## Privacy
 
 Once a message is sent, Telegram provides no way for the bot to retrieve the
-message afterwards -- i.e. when you click the "show" button.  Therefore, all
+message afterwards — i.e. when you click the "show" button.  Therefore, all
 messages sent through this bot are stored server-side.  This sucks, but I'm not
 sure what else to do.
+
+(That is, at the time of writing, unless I'm somehow missing something.)
 
 
 ## Background
