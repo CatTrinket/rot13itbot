@@ -83,7 +83,7 @@ def get_config():
 
     # Read config
     if len(sys.argv) != 2:
-        exit(f'Usage: {sys.argv[0]} config_file')
+        exit('Usage: {} config_file'.format(sys.argv[0]))
 
     config = configparser.ConfigParser()
 
@@ -95,7 +95,7 @@ def get_config():
 
     for field in Config._fields:
         if field not in config['DEFAULT']:
-            exit(f'Missing required config key: {field}')
+            exit('Missing required config key: {}'.format(field))
 
         kwargs[field] = config['DEFAULT'][field]
 
