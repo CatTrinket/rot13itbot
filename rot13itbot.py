@@ -74,6 +74,9 @@ async def show_rot13_message(event, messages):
     except KeyError:
         await event.answer("Message no longer in Rot13ItBot's database")
     else:
+        if len(message) > 200:
+            message = '{}…'.format(message[:199])
+
         await event.answer(message, alert=True)
 
 def get_config():
